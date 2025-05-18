@@ -483,7 +483,7 @@ export interface ApiCaseStudyCaseStudy extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
-    blocks: Schema.Attribute.Blocks & Schema.Attribute.Required;
+    blocks: Schema.Attribute.DynamicZone<['shared.rich-text']>;
     category: Schema.Attribute.Relation<'oneToOne', 'api::category.category'>;
     client_name: Schema.Attribute.String & Schema.Attribute.Required;
     createdAt: Schema.Attribute.DateTime;

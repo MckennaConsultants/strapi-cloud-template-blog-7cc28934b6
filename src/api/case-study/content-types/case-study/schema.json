@@ -49,8 +49,10 @@
       "required": true
     },
     "blocks": {
-      "type": "blocks",
-      "required": true
+      "type": "dynamiczone",
+      "components": [
+        "shared.rich-text"
+      ]
     }
   }
 }
