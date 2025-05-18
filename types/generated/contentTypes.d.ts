@@ -499,7 +499,7 @@ export interface ApiCaseStudyCaseStudy extends Struct.CollectionTypeSchema {
     logo: Schema.Attribute.Media<'images' | 'files'> &
       Schema.Attribute.Required;
     publishedAt: Schema.Attribute.DateTime;
-    quote: Schema.Attribute.String;
+    quote: Schema.Attribute.Text;
     quote_author: Schema.Attribute.String;
     slug: Schema.Attribute.String &
       Schema.Attribute.Required &

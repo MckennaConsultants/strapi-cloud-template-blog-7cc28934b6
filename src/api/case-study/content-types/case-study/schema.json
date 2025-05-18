@@ -39,7 +39,7 @@
       "target": "api::category.category"
     },
     "quote": {
-      "type": "string"
+      "type": "text"
     },
     "quote_author": {
       "type": "string"
