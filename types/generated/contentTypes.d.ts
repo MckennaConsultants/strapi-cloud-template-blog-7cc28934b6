@@ -535,7 +535,11 @@ export interface ApiCategoryCategory extends Struct.CollectionTypeSchema {
     > &
       Schema.Attribute.Private;
     name: Schema.Attribute.String;
+    primary_service_category: Schema.Attribute.Boolean &
+      Schema.Attribute.DefaultTo<false>;
     publishedAt: Schema.Attribute.DateTime;
+    secondary_service_category: Schema.Attribute.Boolean &
+      Schema.Attribute.DefaultTo<false>;
     services: Schema.Attribute.Relation<'oneToMany', 'api::service.service'>;
     slug: Schema.Attribute.UID;
     updatedAt: Schema.Attribute.DateTime;

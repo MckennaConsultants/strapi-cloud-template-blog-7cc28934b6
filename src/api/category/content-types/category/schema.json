@@ -32,6 +32,14 @@
       "relation": "oneToMany",
       "target": "api::service.service",
       "mappedBy": "category"
+    },
+    "primary_service_category": {
+      "type": "boolean",
+      "default": false
+    },
+    "secondary_service_category": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
